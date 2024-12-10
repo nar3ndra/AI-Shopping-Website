@@ -21,10 +21,10 @@ const ContactForm = () => {
         toast.error("Please fill all the fields");
         return;
       }
-      const mailtoLink = `mailto:sumil.suthar@gmail.com?subject=${encodeURIComponent(
+      const mailtoLink = `mailto:nmeenuga@mail.bridgeport.edu?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(
-        `Hello Sumil,\n\nMy name is ${name} and my email address is ${email}.\n\nI wanted to talk to you about the following:\n\n${message}\n\nLooking forward to hearing from you.\n\nBest Regards,\n${name}`
+        `Hello Narendra,\n\nMy name is ${name} and my email address is ${email}.\n\nI wanted to talk to you about the following:\n\n${message}\n\nLooking forward to hearing from you.\n\nBest Regards,\n${name}`
       )}`;
       window.location.href = mailtoLink;
     } catch (error) {
@@ -75,8 +75,8 @@ const ContactForm = () => {
             alt="profile-photo"
           />
           <p>
-            <span>Sumil Suthar</span>Software Engineer <br />
-            sumil.suthar@gmail.com
+            <span>Narendra Meenuga</span> UB Student <br />
+            nmeenuga@my.bridgeport.edu
           </p>
         </div>
         <div>
@@ -85,8 +85,8 @@ const ContactForm = () => {
             alt="profile-photo"
           />
           <p>
-            <span>Sumil Suthar</span>Software Engineer <br />
-            sumil.suthar@gmail.com
+            <span>Abhishek Pesaraganti</span>Student <br />
+            apesa@my.bridgeport.edu
           </p>
         </div>
         <div>
@@ -95,20 +95,11 @@ const ContactForm = () => {
             alt="profile-photo"
           />
           <p>
-            <span>Sumil Suthar</span>Software Engineer <br />
-            sumil.suthar@gmail.com
+            <span>Teja Bailraju</span>Student <br />
+            teja@my.bridgeport.edu
           </p>
         </div>
-        <div>
-          <img
-            src="https://secdatacom.no/wp-content/uploads/sites/3/2019/10/blank-profile-male.jpg"
-            alt="profile-photo"
-          />
-          <p>
-            <span>Sumil Suthar</span>Software Engineer <br />
-            sumil.suthar@gmail.com
-          </p>
-        </div>
+        
       </div>
     </div>
   );

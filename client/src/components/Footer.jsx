@@ -134,7 +134,7 @@ const Footer = () => {
             <p>
               Made By{" "}
               <Link
-                to="https://sumilsuthar.me/"
+                to="http://narendrameenuga.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

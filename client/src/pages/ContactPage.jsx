@@ -7,7 +7,7 @@ const ContactPage = () => {
   const combinedText = {
     text1: "#lets's_talk",
     text2: "Leave A Message, We love to hear from you!",
-    url: "https://nike0197.netlify.app/assets/1-f4da6767.jpg",
+    url: "https://i.imgur.com/f6bqTfa.jpg",
   };
   return (
     <>
@@ -17,41 +17,36 @@ const ContactPage = () => {
       <div className="contact-details">
         <div className="company-details">
           <span>GET IN TOUCH</span>
-          <h2>Visit one of our agency location or contact us today</h2>
-          <h3>Head Office</h3>
+          <h2>Visit us in our university</h2>
+          <h3>Students Location</h3>
           <div className="contactAddress">
             <ul type="none">
               <li>
                 <div>
                   <FaRegMap />
                 </div>{" "}
-                Linking Road, Bandra West
+                University of Bridgeport, Bridgeport, CT, USA 06604
               </li>
               <li>
                 <div>
                   <FiMail />
                 </div>{" "}
-                contactus@shoekart.com
+                nmeenuga@my.bridgeport.edu
               </li>
               <li>
                 <div>
                   <FaPhoneAlt />
                 </div>{" "}
-                +91 1234567890
+                +1 4753325025
               </li>
-              <li>
-                <div>
-                  <FaClock />
-                </div>{" "}
-                Monday to Saturday: 9:00am to 10:00pm
-              </li>
+              
             </ul>
           </div>
         </div>
         <div className="map">
           <iframe
             title="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.983463068892!2d72.83328527507607!3d19.064464682137803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sThadomal%20Shahani%20Engineering%20College!5e0!3m2!1sen!2sin!4v1692991846645!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.612362631191!2d-73.19323378923718!3d41.1648091096536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e80e0e8cba1c71%3A0x9c3bc31028d06477!2sUniversity%20of%20Bridgeport!5e0!3m2!1sen!2sus!4v1733802750059!5m2!1sen!2sus"
             height="450"
             style={{ border: "0", width: "-webkit-fill-available" }}
             allowFullScreen
