@@ -9,7 +9,9 @@ import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
+    
     <>
+   
       <section className="subscription">
         <div className="subscription-c1">
           <span>Get The Latest Deals And More</span>
@@ -19,6 +21,16 @@ const Footer = () => {
           <div>
             <input type="email" name="" placeholder="Enter Your Email" id="" />
             <button type="submit">Subscribe</button>
+          </div>
+        </div>
+        <div>
+        <div className="chatbot-container">
+            <iframe
+              src="https://www.chatbase.co/chatbot-iframe/kwQZnZcCd-s4DTUmnVDhb"
+              width="100%"
+              style={{ height: "100%", minHeight: "700px", border: "none" }}
+              title="Chatbot"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -143,6 +155,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
+
       </section>
     </>
   );

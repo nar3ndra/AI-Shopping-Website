@@ -81,7 +81,7 @@ const CartItems = ({ cartId, data, qty, size, deleteItem, updateData }) => {
         <div className="cart-mobile-info">
           <p>Size: {size}</p>
           <p>Quantity: {size}</p>
-          <p>Price: ₹ {data.price}/item</p>
+          <p>Price: ${data.price}/item</p>
         </div>
       </td>
       <td className="cart-subheader">
@@ -103,7 +103,7 @@ const CartItems = ({ cartId, data, qty, size, deleteItem, updateData }) => {
         </div>
       </td>
       <td className="cart-subheader">
-        <p>₹ {qty * data.price}</p>
+        <p>\$ {qty * data.price}</p>
       </td>
     </tr>
   );

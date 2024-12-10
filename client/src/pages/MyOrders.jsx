@@ -145,7 +145,7 @@ const MyOrders = () => {
                   {new Date(item.createdAt).toDateString()}
                 </td>
                 <td className="order-td">{item.delivered}</td>
-                <td className="order-td">₹{item.totalPrice}</td>
+                <td className="order-td">\$ {item.totalPrice}</td>
               </tr>
             ))}
           </tbody>

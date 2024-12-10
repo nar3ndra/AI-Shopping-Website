@@ -25,23 +25,34 @@ app.use(express.json());
 //using routes
 app.get("/", (req, res) => {
   res.json({
-    project: "Shoekart API",
+    project: "UB shopping API",
     description:
-      "This is an API for an shoes E-commerce application. It provides endpoints for managing products, orders, and users.",
+      "This is an API UB shopping Application",
     author: {
-      name: "Sumil Suthar",
-      portfolio: "http://sumilsuthar.me/",
+      name: "Narendra Meenuga",
+      portfolio: "http://narendrameenuga.com/",
     },
     version: "1.0.0",
   });
 });
-app.use("/api/v1/payment", verifyToken, paymentRoute);
-app.use("/api/v1/", userRoute);
-app.use("/api/v1/product", productRoute);
-app.use("/api/v1/cart", verifyToken, cartRoute);
-app.use("/api/v1/admin", adminOnly, adminRoute);
-app.use("/api/v1/brands", adminOnly, brandRoute);
-app.use("/api/v1/category", adminOnly, categoryRoute);
+
+
+// app.use("/api/v1/payment", verifyToken, paymentRoute);
+// app.use("/api/v1/", userRoute);
+// app.use("/api/v1/product", productRoute);
+// app.use("/api/v1/cart", verifyToken, cartRoute);
+// app.use("/api/v1/admin", adminOnly, adminRoute);
+// app.use("/api/v1/brands", adminOnly, brandRoute);
+// app.use("/api/v1/category", adminOnly, categoryRoute);
+
+
+app.use("/payment", verifyToken, paymentRoute);
+app.use("/", userRoute);
+app.use("/product", productRoute);
+app.use("/cart", verifyToken, cartRoute);
+app.use("/admin", adminOnly, adminRoute);
+app.use("/brands", adminOnly, brandRoute);
+app.use("/category", adminOnly, categoryRoute);
 
 app.get("*", (req, res) => {
   //   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
@@ -63,5 +74,7 @@ const StartServer = async () => {
     console.log(error);
   }
 };
+
+
 
 StartServer();
