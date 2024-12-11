@@ -80,7 +80,7 @@ const BrandList = () => {
   const handleUpdate = (id) => async () => {
     try {
       if (!id) {
-        return toast.error("Please select a brand to update.");
+        return toast.error("Please select a Autor to update.");
       }
       const token = localStorage.getItem("jwtAdmin");
       if (!token) {
@@ -139,7 +139,7 @@ const BrandList = () => {
   if (loading) return <TriangleLoader height="500px" />;
   return (
     <div className="dashboardMain">
-      <h1>Brands</h1>
+      <h1>Authors</h1>
       <div className="dashOverview dash-forms">
         <form onSubmit={handleFormSubmit}>
           <div className="inputs">
@@ -149,7 +149,7 @@ const BrandList = () => {
                 type="text"
                 className="form-control"
                 id="name"
-                placeholder="Enter brand name"
+                placeholder="Enter Author name"
                 onChange={handleInputChange}
                 value={formData.name}
               />
@@ -160,7 +160,7 @@ const BrandList = () => {
                 type="text"
                 className="form-control"
                 id="description"
-                placeholder="Enter brand description"
+                placeholder="Enter Author description"
                 onChange={handleInputChange}
                 value={formData.description}
               />
@@ -171,7 +171,7 @@ const BrandList = () => {
                 type="email"
                 className="form-control"
                 id="email"
-                placeholder="Enter brand email"
+                placeholder="Enter Author email"
                 onChange={handleInputChange}
                 value={formData.email}
               />

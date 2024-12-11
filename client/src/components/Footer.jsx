@@ -125,7 +125,7 @@ const Footer = () => {
                     <FaPhoneAlt />
                   </span>
                   <p>
-                    <Link to="tel:+12345678900">+1 234 567 8900</Link>
+                     <Link to="tel:+14753325025">+1 475 332 5025</Link>
                   </p>
                 </li>
                 <li>
@@ -133,8 +133,8 @@ const Footer = () => {
                     <IoIosMail />
                   </span>
                   <p>
-                    <Link to="mailto:knowmore@shoekart.in">
-                      knowmore@shoekart.in
+                    <Link to="mailto:nmeenuga@my.bridgeport.edu">
+                      nmeenuga@my.bridgeport.edu
                     </Link>
                   </p>
                 </li>
@@ -142,7 +142,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="copyrightText">
-            <p>Copyright ©{new Date().getFullYear()} Shoekart</p>
+            <p>Copyright ©{new Date().getFullYear()} Ub Bookstore</p>
             <p>
               Made By{" "}
               <Link
@@ -150,7 +150,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Sumil Suthar
+                Narendra Meenuga
               </Link>
             </p>
           </div>

@@ -68,7 +68,7 @@ const CartLayout = () => {
   const applyCoupon = (coupon) => {
     if (!data || data.length <= 0) return toast.error("Cart is empty.");
     console.log(coupon.toUpperCase());
-    const listOfCoupons = ["SUMILSUTHAR197", "NIKE2024"];
+    const listOfCoupons = ["UBSTUDENT", "NARENDRA2024"];
     if (listOfCoupons.includes(coupon.toUpperCase())) {
       setCouponCode(coupon);
       setAppliedCoupon(true);
@@ -120,7 +120,7 @@ const CartLayout = () => {
           {(!data || data.items.length <= 0) && (
             <div className="empty-cart">
               <img src={EmptyImage} alt="empty-cart" />
-              <p>Looks like you haven't added any items to the cart yet.</p>
+              <p>Looks like you haven't added any books to the cart yet.</p>
             </div>
           )}
         </div>
@@ -131,13 +131,13 @@ const CartLayout = () => {
               <p>
                 <span>Sub Total</span>
                 <span>
-                  ₹{" "}
+                  ${" "}
                   {(data?.totalPrice - data?.totalPrice * 0.12 || 0).toFixed(2)}
                 </span>
               </p>
               <p>
                 <span>Tax</span>
-                <span>₹ {(data?.totalPrice * 0.12 || 0).toFixed(2)}</span>
+                <span>$ {(data?.totalPrice * 0.12 || 0).toFixed(2)}</span>
               </p>
               <p>
                 <span>Shipping Charge</span>
@@ -145,7 +145,7 @@ const CartLayout = () => {
               </p>
               <p>
                 <span>Giftcard/Discount code</span>
-                {/* <span>- ₹ 0</span> */}
+                {/* <span>- $ 0</span> */}
               </p>
               <div className="couponInput">
                 <input
@@ -169,7 +169,7 @@ const CartLayout = () => {
               </div>
               <p className="cart-total">
                 <span>Total</span>
-                <span>₹ {(data?.totalPrice || 0).toFixed(2)}</span>
+                <span>$ {(data?.totalPrice || 0).toFixed(2)}</span>
               </p>
             </div>
             <button

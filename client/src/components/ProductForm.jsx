@@ -111,22 +111,22 @@ const ProductForm = ({
       <div className="dash-input-1">
         <div style={{ width: "100%" }}>
           <div className="form-group">
-            <label htmlFor="name">Product Name</label>
+            <label htmlFor="name">Book Name</label>
             <input
               type="text"
               className="form-control"
               id="name"
-              placeholder="Enter product name"
+              placeholder="Enter Book Title"
               value={data.name}
               onChange={handleInputChange}
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="desc">Product Description</label>
+            <label htmlFor="desc">Book Description</label>
             <textarea
               rows={4}
-              placeholder="Enter product description"
+              placeholder="Enter Book description"
               id="desc"
               className="form-control"
               value={data.desc}
@@ -134,14 +134,14 @@ const ProductForm = ({
             />
           </div>
           <div className="form-group">
-            <label htmlFor="sku">Product SKU Number</label>
+            <label htmlFor="sku">BOOK ISBN Number</label>
             <input
               type="text"
               className="form-control"
               id="sku"
               value={data.sku}
               onChange={handleInputChange}
-              placeholder="Enter product SKU number"
+              placeholder="Enter Book ISBN number"
             />
           </div>
           <div className="form-group">
@@ -153,7 +153,7 @@ const ProductForm = ({
               value={data.price}
               onChange={handleInputChange}
               min={0}
-              placeholder="Enter product price"
+              placeholder="Enter Book price"
             />
           </div>
         </div>
@@ -194,7 +194,7 @@ const ProductForm = ({
       </div>
       <div className="dash-input-2">
         <div className="form-group">
-          <label htmlFor="color">Product Color</label>
+          <label htmlFor="color">Book Binding Cover Color</label>
           <select
             className="form-control"
             id="color"
@@ -210,14 +210,14 @@ const ProductForm = ({
           </select>
         </div>
         <div className="form-group">
-          <label htmlFor="brand">Product Brand</label>
+          <label htmlFor="brand">Book Category</label>
           <select
             className="form-control"
             id="brand"
             onChange={handleInputChange}
             value={data.brand}
           >
-            <option value="">Select a brand</option>
+            <option value="">Select a Category</option>
             {options.brandOptions &&
               options.brandOptions.map((brand, index) => (
                 <option key={index} value={brand}>
@@ -227,18 +227,18 @@ const ProductForm = ({
           </select>
         </div>
         <div className="form-group">
-          <label htmlFor="material">Product Material</label>
+          <label htmlFor="material">Binding Type</label>
           <input
             type="text"
             className="form-control"
             id="material"
             value={data.material}
             onChange={handleInputChange}
-            placeholder="Enter product material"
+            placeholder="Enter Book type Hardcover/paperback"
           />
         </div>
         <div className="form-group">
-          <label htmlFor="featured">Product Featured</label>
+          <label htmlFor="featured">Book published</label>
           <select
             className="form-control"
             id="featured"
@@ -282,19 +282,19 @@ const ProductForm = ({
         <table className="order-table">
           <thead>
             <tr>
-              <th className="order-subheader order-th">Size</th>
+              {/* <th className="order-subheader order-th">Size</th>
               {Array.from({ length: 12 }, (_, i) => i + 3).map(
                 (size, index) => (
                   <th className="order-subheader order-th" key={index}>
                     {size}
                   </th>
                 )
-              )}
+              )} */}
             </tr>
           </thead>
           <tbody className="order-table-tbody">
             <tr>
-              <td className="order-td">Quantity</td>
+              <td className="order-td">Number of books printed</td>
               {Array.from({ length: 12 }, (_, i) => i + 3).map(
                 (size, index) => (
                   <td

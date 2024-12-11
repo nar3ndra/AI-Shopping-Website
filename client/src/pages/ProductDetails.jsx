@@ -83,7 +83,7 @@ const ProductDetails = () => {
       <div className="prod-details-cont">
         <h1 className="ptitle">{data.brand + " " + data.name.toLowerCase()}</h1>
         <h3 className="pprize">
-          ₹ {data.price} <span>3000 </span>
+          $ {data.price} <span>3000 </span>
         </h3>
         <div className="pStar">
           <Star rating={data.ratingScore / data.ratings.length || 0} />
@@ -95,7 +95,7 @@ const ProductDetails = () => {
           disabled={data.sizeQuantity.length === 0}
           onChange={(e) => setSize(e.target.value)}
         >
-          <option value="">Select Size</option>
+          <option value="">Select quantity</option>
           {data.sizeQuantity &&
             data.sizeQuantity
               .filter((data) => data.quantity > 0)
@@ -121,18 +121,18 @@ const ProductDetails = () => {
         <h3 className="pDescTitle">Product Details</h3>
         <p>{data.description}</p>
         <h3 className="pDescTitle">
-          Color:{" "}
+          Binding Cover Color:{" "}
           <p style={{ fontWeight: "normal", display: "inline" }}>
             {data.color}
           </p>
         </h3>
         <h3 className="pDescTitle">
-          Material:{" "}
+          Harcover/paperback:{" "}
           <p style={{ fontWeight: "normal", display: "inline" }}>
             {data.material}
           </p>
         </h3>
-        <h3 className="pDescTitle">Features:</h3>
+        <h3 className="pDescTitle">Contents:</h3>
         <div style={{ marginLeft: "15px" }}>
           {" "}
           <ol>
@@ -173,19 +173,19 @@ const ProductDetails = () => {
             <button className="pincode-check">check</button>
           </div>
           <h5>
-            Please enter PIN code to check delivery time & Pay on Delivery
+            Please enter Zip code to check delivery time & Pay on Delivery
             Availability
           </h5>
           <ul type="none">
-            <li>100% Original Products</li>
+            <li>Quality Books</li>
             <li>Pay on delivery might be available</li>
             <li>Easy 30 days returns and exchanges</li>
-            <li>Try & Buy might be available</li>
+            <li>Read & Buy might be available</li>
           </ul>
         </div>
         <h3 className="pDescTitle">Offers</h3>
         <ul type="none">
-          <li>Use &apos;SUMILSUTHAR197&apos; to avail flat 20% Off</li>
+          <li>Use &apos;NARENDRA2024&apos; to avail flat 20% Off</li>
         </ul>
         <RatingContainer ratings={data.ratings} />
       </div>

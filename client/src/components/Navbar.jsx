@@ -24,7 +24,7 @@ const Navbar = () => {
         <FiMenu />
       </div>
       <span className="logo">
-        <Link to="/">SHOEKART</Link>
+        <Link to="/">UB BOOKSTORE</Link>
         {/* <img src={logo} alt="LOGO" /> */}
       </span>
       <div className={isOpen ? "nav-links-md" : "nav-links"}>
@@ -53,7 +53,7 @@ const Navbar = () => {
             setIsOpen(!isOpen);
           }}
         >
-          Trending
+          Best-Sellers
         </NavLink>
         <NavLink
           to="/products"
@@ -62,7 +62,7 @@ const Navbar = () => {
             setIsOpen(!isOpen);
           }}
         >
-          Products
+          Books
         </NavLink>
         <NavLink
           to="/"

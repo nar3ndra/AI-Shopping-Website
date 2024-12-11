@@ -67,7 +67,7 @@ const Product = () => {
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="What shoes are you looking for ?"
+              placeholder="What books are you looking for ?"
             />
             <div>
               <FiSearch />

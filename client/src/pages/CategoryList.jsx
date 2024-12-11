@@ -160,7 +160,7 @@ const CategoryList = () => {
                 type="text"
                 className="form-control"
                 id="description"
-                placeholder="Enter brand description"
+                placeholder="Enter Category description"
                 onChange={handleInputChange}
                 value={formData.description}
               />

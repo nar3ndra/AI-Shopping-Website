@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "sumil",
+  "author": "NarendraMeenuga-Abhishek-Teja",
   "license": "ISC",
   "dependencies": {
     "async": "^3.2.5",

@@ -3,7 +3,7 @@ const features = [
   {
     imgSrc:
       "https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/70/null/external-quality-logistic-delivery-kiranshastry-lineal-kiranshastry.png",
-    text: "100% ORIGINAL GUARANTEE",
+    text: "AUTHOR MEETUPS",
   },
   {
     imgSrc: "https://img.icons8.com/ios/64/null/security-checked--v1.png",

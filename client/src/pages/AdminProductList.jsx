@@ -93,7 +93,7 @@ const AdminProductList = () => {
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="What shoes are you looking for ?"
+            placeholder="What books are you looking for ?"
           />
           <div>
             <FiSearch />
@@ -118,8 +118,8 @@ const AdminProductList = () => {
               >
                 Product Details
               </th>
-              <th className="order-subheader order-th ">Brand</th>
-              <th className="order-subheader order-th ">Size(UK)</th>
+              <th className="order-subheader order-th ">Autor</th>
+              <th className="order-subheader order-th ">other</th>
               <th className="order-subheader order-th ">Status</th>
               <th className="order-subheader order-th ">Price</th>
               <th className="order-subheader order-th ">Action</th>
@@ -165,7 +165,7 @@ const AdminProductList = () => {
                   ))}
                 </td>
                 <td className="order-td">{item.status}</td>
-                <td className="order-td">₹{item.price}</td>
+                <td className="order-td">${item.price}</td>
                 <td className="order-td">
                   <div
                     className="order-btn-cont"
