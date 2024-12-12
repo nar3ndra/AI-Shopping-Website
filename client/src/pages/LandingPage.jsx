@@ -1,7 +1,7 @@
 import { useEffect, useRef, useContext } from "react";
-import kid from "../Images/kid.webp";
-import men from "../Images/men.webp";
-import women from "../Images/women.webp";
+import kid from "../Images/tech.png";
+import men from "../Images/business.png";
+import women from "../Images/sports.png";
 import Card from "../components/Card";
 import Container from "../components/Container";
 import Countdown from "../components/Countdown";
@@ -30,7 +30,7 @@ const LandingPage = () => {
       <LandingBanner />
 
       <section id="trending" className="title">
-        <h1>Who You Are Shopping For?</h1>
+        <h1>Which category Are Shopping For?</h1>
       </section>
 
       <section className="shopping-gender">
@@ -40,8 +40,8 @@ const LandingPage = () => {
       </section>
 
       <section id="trending" className="title">
-        <h1>New Arrivals</h1>
-        <h2>summer collection new modern design</h2>
+        <h1>Newly Published</h1>
+        <h2>Most sold collection and new authours </h2>
       </section>
 
       <Container />
@@ -49,8 +49,8 @@ const LandingPage = () => {
       {data?.featured && data.featured.length > 0 && (
         <>
           <section id="featuredProd" className="title">
-            <h1>Featured Products</h1>
-            <h2>The new modern design summer collection</h2>
+            <h1>Featured Books</h1>
+            <h2>Most popular and most bought books around the world</h2>
           </section>
 
           <section className="Featured-products">
@@ -69,7 +69,7 @@ const LandingPage = () => {
         <>
           <section className="title">
             <h1>Hot Deal On Sales</h1>
-            <h2>The new modern design summer collection</h2>
+            <h2>The new books collection</h2>
           </section>
           <section className="Featured-products">
             <div className="product-container">

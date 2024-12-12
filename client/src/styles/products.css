@@ -69,13 +69,13 @@
 }
 .pagination-button:hover,
 .pagination-button.active {
-  background-color: #54bab9;
+  background-color: #582c82;
   color: #e8f6ea;
 }
 .pagination-button:disabled {
   cursor: not-allowed;
   background-color: #fff;
-  color: #cce7d0;
+  color: #582c82;
 }
 .pagination-ctrl {
   padding: 0.55rem;

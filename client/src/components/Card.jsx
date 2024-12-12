@@ -46,13 +46,13 @@ const Card = (data) => {
       </Link>
       <div className="desc">
         <Link to={`/product/${data.slug}`} style={{ textDecoration: "none" }}>
-          <h5>{data.brand}</h5>
-          <h6>{toTitleCase(data.name)}</h6>
+          <h5>{data.name}</h5>
+          <h6>{toTitleCase(data.brand)}</h6>
         </Link>
         <div className="star">
           {<Star rating={data.ratingScore / data.ratings.length || 0} />}
         </div>
-        <h4>₹ {data.price}</h4>
+        <h4>${data.price}</h4>
       </div>
       <button
         className="btn-cart"
